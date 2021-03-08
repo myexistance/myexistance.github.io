@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Blog for Foundation course at EDA - Joon</title>
+  <link
+    href='https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700,400italic|Montserrat:400,700|Cardo:400italic|Advent+Pro:100'
+    rel='stylesheet' type='text/css'>
+  <link href="index.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header class="fixed-header">
+    <h1>Joon Yoon</h1>
+    <nav>
+      <ul>
+      
+        <li><a href="https://myexistance.github.io/blog/index.html">HOME</a></li>
+        <li><a href="https://myexistance.github.io/blog/sprint2-technical.html">S-2</a></li>
+        <li><a href="https://myexistance.github.io/blog/sprint3-technical.html">S-3</a></li>
+        <!-- <li><a href="https://myexistance.github.io/blog/sprint4-technical.html">Sprint4</a></li>
+        				<li><a href="https://myexistance.github.io/blog/sprint5-technical.html">Sprint5</a></li> -->
+        <li><a href="https://myexistance.github.io/Joon.portFolio/" target=”_blank”>Portfolio</li>
+      
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>What are the differences between relative, absolute, and fixed positioning?</h2>
+    <h4><u>Position: relative</u></h4>
+    <p>Position an element based on its current position without changing layout. If you want to position the div(element) but do not want to affect the layout around, <strong>use RELATIVE position</strong>.</p>
+
+    <div>
+    <p class="indent">
+    div {
+    top: 20px;<br>
+    left: 20px;<br>
+    background: green;<br>
+    position: relative;<br>
+    }
+    </p>
+    </div>
+
+    <div>
+    <h4><u>Position: absolute</u></h4>
+    <p>An element with <strong>position: absolute;</strong> is positioned relative to the nearest positioned ancestor.
+    
+      However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along
+      with
+      page scrolling.</p>
+
+      <p class="indent">
+        div.absolute {<br>
+        position: absolute;<br>
+        top: 80px;<br>
+        right: 0;<br>
+        width: 200px;<br>
+        height: 100px;<br>
+        border: 3px solid #73AD21;<br>
+        }
+      </p>
+    </div>
+    
+    <div>
+    <h4><u>Position: fixed</u></h4>
+    <p>An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place
+    even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.
+    
+    A fixed element does not leave a gap in the page where it would normally have been located.</p>
+
+    <p class="indent">
+      div.fixed {<br>
+      position: fixed;<br>
+      bottom: 0;<br>
+      right: 0;<br>
+      width: 300px;<br>
+      border: 3px solid #73AD21;<br>
+      }
+    </p>
+    </div>
+  </main>
+
+  <!-- <script src="script.js"></script> -->
+</body>
+
+</html>
